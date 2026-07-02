@@ -5,82 +5,329 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>AI 最新资讯每日播报｜2026-07-02</title>
   <style>
-    :root{--ink:#17202a;--muted:#5d6b7a;--line:#d9e1e8;--bg:#f6f8fb;--panel:#fff;--blue:#2457c5;--green:#0f7b5f;--amber:#a15c00;--rose:#b33a4b;--slate:#2c3e50}
-    *{box-sizing:border-box}body{margin:0;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","PingFang SC","Microsoft YaHei",sans-serif;color:var(--ink);background:var(--bg);line-height:1.56}a{color:var(--blue);text-decoration:none}a:hover{text-decoration:underline}
-    .hero{background:linear-gradient(135deg,#10233f,#18564f 54%,#7b4b12);color:#fff;padding:32px 18px 24px}.wrap{width:min(1120px,calc(100% - 32px));margin:0 auto}.hero h1{margin:0 0 12px;font-size:clamp(28px,6vw,52px);line-height:1.08}.lead{max-width:880px;margin:0;color:rgba(255,255,255,.86)}.meta{display:flex;flex-wrap:wrap;gap:8px;margin-top:14px}.pill{display:inline-flex;padding:5px 10px;border:1px solid rgba(255,255,255,.32);border-radius:999px;background:rgba(255,255,255,.08);font-size:13px}
-    main{padding:24px 0 36px}section{margin-bottom:24px}h2{margin:0 0 12px;font-size:22px;line-height:1.25}h3{margin:0 0 8px;font-size:17px;line-height:1.35}.grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px}.two{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}.impact{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:12px}.card{background:var(--panel);border:1px solid var(--line);border-radius:8px;padding:14px;box-shadow:0 1px 2px rgba(23,32,42,.04)}.summary{border-left:4px solid var(--blue);min-height:142px}.tag{display:inline-block;margin-bottom:8px;padding:2px 8px;border-radius:999px;font-size:12px;font-weight:650}.blue{color:var(--blue);background:#e8f0ff}.green{color:var(--green);background:#e7f5ef}.amber{color:var(--amber);background:#fff3dd}.rose{color:var(--rose);background:#ffecef}.slate{color:var(--slate);background:#edf1f5}.card p,.item p{margin:6px 0 0;color:var(--muted);font-size:14px}.item{padding:13px 0;border-top:1px solid var(--line)}.item:first-child{border-top:0;padding-top:0}.company{display:grid;grid-template-columns:120px minmax(0,1fr);gap:10px;padding:12px 0;border-top:1px solid var(--line)}.company:first-child{border-top:0;padding-top:0}.company small{display:block;color:var(--muted)}.watch{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px;padding:0;list-style:none}.watch li{background:#fff;border:1px solid var(--line);border-radius:8px;padding:12px}footer{padding:24px 0 36px;background:#eef3f8;color:var(--muted);font-size:14px}.source-list{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}.source{background:#fff;border:1px solid var(--line);border-radius:8px;padding:10px}@media(max-width:860px){.grid,.two,.impact,.watch,.source-list{grid-template-columns:1fr}.company{grid-template-columns:1fr}}
+    :root {
+      --ink:#17202a; --muted:#5b6876; --soft:#f5f7fb; --panel:#ffffff; --line:#d9e1ea;
+      --blue:#2457c5; --green:#0f7b5f; --amber:#9a5c00; --red:#b23a48; --violet:#6554c0;
+    }
+    * { box-sizing:border-box; }
+    body {
+      margin:0;
+      font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","PingFang SC","Microsoft YaHei",sans-serif;
+      color:var(--ink);
+      background:var(--soft);
+      line-height:1.62;
+    }
+    a { color:var(--blue); text-decoration:none; }
+    a:hover { text-decoration:underline; }
+    .hero {
+      background:
+        linear-gradient(120deg,rgba(14,35,68,.92),rgba(20,91,83,.84)),
+        url("https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=1800&q=80") center/cover;
+      color:#fff;
+      padding:38px 18px 28px;
+    }
+    .wrap { width:min(1120px,calc(100% - 32px)); margin:0 auto; }
+    .hero h1 { margin:0 0 12px; font-size:clamp(28px,6vw,52px); line-height:1.08; letter-spacing:0; }
+    .lead { max-width:900px; margin:0; color:rgba(255,255,255,.88); font-size:17px; }
+    .meta { display:flex; flex-wrap:wrap; gap:8px; margin-top:16px; }
+    .pill { display:inline-flex; align-items:center; padding:5px 10px; border:1px solid rgba(255,255,255,.36); border-radius:999px; background:rgba(255,255,255,.1); font-size:13px; }
+    main { padding:26px 0 40px; }
+    section { margin-bottom:26px; }
+    h2 { margin:0 0 12px; font-size:22px; line-height:1.26; }
+    h3 { margin:0 0 7px; font-size:17px; line-height:1.34; }
+    p { margin:0; }
+    .grid { display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:12px; }
+    .two { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:12px; }
+    .impact { display:grid; grid-template-columns:repeat(4,minmax(0,1fr)); gap:12px; }
+    .card { background:var(--panel); border:1px solid var(--line); border-radius:8px; padding:14px; box-shadow:0 1px 2px rgba(23,32,42,.04); }
+    .summary { border-left:4px solid var(--blue); min-height:158px; }
+    .tag { display:inline-block; margin-bottom:8px; padding:2px 8px; border-radius:999px; font-size:12px; font-weight:700; }
+    .blue { color:var(--blue); background:#e8f0ff; }
+    .green { color:var(--green); background:#e8f6ef; }
+    .amber { color:var(--amber); background:#fff3dd; }
+    .red { color:var(--red); background:#ffecef; }
+    .violet { color:var(--violet); background:#f0edff; }
+    .card p, .item p, .company p, .source p { color:var(--muted); font-size:14px; }
+    .item { padding:13px 0; border-top:1px solid var(--line); }
+    .item:first-child { border-top:0; padding-top:0; }
+    .company { display:grid; grid-template-columns:132px minmax(0,1fr); gap:10px; padding:12px 0; border-top:1px solid var(--line); }
+    .company:first-child { border-top:0; padding-top:0; }
+    .company small { display:block; color:var(--muted); font-size:12px; }
+    .watch { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:10px; padding:0; margin:0; list-style:none; }
+    .watch li { background:#fff; border:1px solid var(--line); border-radius:8px; padding:12px; }
+    footer { padding:24px 0 36px; background:#eef3f8; color:var(--muted); font-size:14px; }
+    .source-list { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:10px; }
+    .source { background:#fff; border:1px solid var(--line); border-radius:8px; padding:10px; }
+    .note { color:var(--muted); font-size:13px; margin-top:10px; }
+    @media (max-width:900px) {
+      .grid, .two, .impact, .watch, .source-list { grid-template-columns:1fr; }
+      .company { grid-template-columns:1fr; }
+      .summary { min-height:auto; }
+    }
   </style>
 </head>
 <body>
   <header class="hero">
     <div class="wrap">
       <h1>AI 最新资讯每日播报｜2026-07-02</h1>
-      <p class="lead">补发版。今日主线：白宫加速前沿模型自愿标准，Meta 被曝考虑出售过剩 AI 算力，Agent 基础设施和企业文档智能继续成为应用层高频主题。</p>
-      <div class="meta"><span class="pill">更新：2026-07-02 10:00 CST</span><span class="pill">渠道：GitHub Pages + 飞书</span><span class="pill">固定源已检查</span></div>
+      <p class="lead">今日主线：前沿模型发布进入“政府审查 + 分级访问”阶段，Meta 算力商业化传闻把 AI CapEx 讨论推向资产利用率，开发者生态继续围绕 Agent、安全沙箱、企业文档智能和开源模型展开。</p>
+      <div class="meta">
+        <span class="pill">更新时间：2026-07-02 14:52 CST</span>
+        <span class="pill">发布渠道：GitHub Pages + 飞书</span>
+        <span class="pill">固定信息源：已检查</span>
+      </div>
     </div>
   </header>
+
   <main class="wrap">
     <section>
       <h2>今日核心摘要</h2>
       <div class="grid">
-        <article class="card summary"><span class="tag rose">政策舆情</span><h3>白宫加速前沿 AI 模型发布标准</h3><p>FT 报道称，白宫正加快制定先进模型发布的自愿标准，重点包括 cyber 能力基准、发布时间表和“frontier”模型识别。<a href="https://www.ft.com/content/0bb7e2f9-007b-4577-9c4a-858948ee969a" target="_blank" rel="noopener">FT</a></p></article>
-        <article class="card summary"><span class="tag slate">算力产业</span><h3>Meta 被曝考虑出售过剩 AI 算力</h3><p>报道称 Meta 计划将过剩 AI 计算能力商业化，可能出租裸算力或提供模型访问；若落地，将与 AWS、Microsoft、Google、CoreWeave 等直接竞争。<a href="https://nypost.com/2026/07/01/business/meta-shares-jump-10-on-report-its-selling-excess-ai-computing-power/" target="_blank" rel="noopener">来源</a></p></article>
-        <article class="card summary"><span class="tag blue">模型治理</span><h3>GPT-5.6 与 Anthropic 事件推动“发布前审查”常态化</h3><p>OpenAI GPT-5.6 受限预览、Anthropic 模型出口限制与解除共同构成模板：前沿模型发布越来越像准许可流程。<a href="https://www.axios.com/2026/06/26/openai-gpt-sol-terra-luna-trump" target="_blank" rel="noopener">Axios</a></p></article>
-        <article class="card summary"><span class="tag amber">开发者生态</span><h3>LangChain 与 LlamaIndex 继续押注 Agent 工程化</h3><p>LangChain 近期围绕 Agent、客户数据、检索和评测；LlamaIndex 继续强化 LlamaParse、Retrieval Harness 和文档工作流。<a href="https://www.langchain.com/blog" target="_blank" rel="noopener">LangChain</a> · <a href="https://www.llamaindex.ai/blog" target="_blank" rel="noopener">LlamaIndex</a></p></article>
-        <article class="card summary"><span class="tag green">资本市场</span><h3>AI CapEx 叙事转向“资产利用率”</h3><p>Meta 算力商业化线索说明，市场不只看 AI 基建投入规模，也开始追问闲置算力如何变现、数据中心 ROI 如何验证。</p></article>
-        <article class="card summary"><span class="tag green">应用市场</span><h3>文档智能仍是企业 AI 最清晰落点</h3><p>票据、KYC、法务、合同、知识库等场景更容易形成“解析-检索-执行-审计”闭环，适合先于通用 Agent 收费。</p></article>
+        <article class="card summary">
+          <span class="tag red">政策舆情</span>
+          <h3>美国前沿模型发布进入准审批状态</h3>
+          <p>Axios 6 月 26 日报道，OpenAI GPT-5.6 仅向约 20 家经政府认可的机构预览；监管重点是 cyber 能力和“covered frontier model”认定。<a href="https://www.axios.com/2026/06/26/openai-gpt-sol-terra-luna-trump" target="_blank" rel="noopener">来源</a></p>
+        </article>
+        <article class="card summary">
+          <span class="tag blue">模型进展</span>
+          <h3>GPT-5.6 分为 Sol、Terra、Luna 三档</h3>
+          <p>公开报道称新系列强调编码、网络安全、生物和长程 Agent 任务，但目前仍处限制预览期；这会短期压制开发者可用性。<a href="https://www.theverge.com/ai-artificial-intelligence/957845/openai-gpt-5-6-trump-administration-ai-preview" target="_blank" rel="noopener">来源</a></p>
+        </article>
+        <article class="card summary">
+          <span class="tag red">安全与伦理</span>
+          <h3>Anthropic Fable / Mythos 限制被解除</h3>
+          <p>Guardian 7 月 1 日报道，美国解除对 Anthropic Fable 5、Mythos 5 的部分限制，Fable 恢复访问，Mythos 仍面向获准安全机构有限部署。<a href="https://www.theguardian.com/technology/2026/jul/01/anthropic-fable-mythos-ai-models-us-export-controls-lifted" target="_blank" rel="noopener">来源</a></p>
+        </article>
+        <article class="card summary">
+          <span class="tag amber">算力产业</span>
+          <h3>Meta 被曝考虑出售过剩 AI 算力</h3>
+          <p>多家媒体称 Meta 可能把过剩 AI 计算能力商业化，形态可能是裸算力或模型访问；公司尚未正式确认。<a href="https://nypost.com/2026/07/01/business/meta-shares-jump-10-on-report-its-selling-excess-ai-computing-power/" target="_blank" rel="noopener">来源</a></p>
+        </article>
+        <article class="card summary">
+          <span class="tag green">开发者生态</span>
+          <h3>LangChain 7 月 1 日密集更新 Agent 工程文章</h3>
+          <p>LangChain 博客最新可见内容包括 OpenWiki、Deep Agents 中的 RLM、Pendo 案例，主题集中在仓库文档、深层 Agent 和行为追踪。<a href="https://www.langchain.com/blog" target="_blank" rel="noopener">来源</a></p>
+        </article>
+        <article class="card summary">
+          <span class="tag green">应用市场</span>
+          <h3>LlamaIndex 强化企业文档检索工具链</h3>
+          <p>6 月 29 日 Retrieval Harness 把 LlamaParse Index 扩展为文件系统式工具，提供混合检索、文件列表、grep、直接读取与管线观测。<a href="https://www.llamaindex.ai/blog/announcing-retrieval-harness" target="_blank" rel="noopener">来源</a></p>
+        </article>
+        <article class="card summary">
+          <span class="tag violet">开源模型</span>
+          <h3>中国开源模型继续牵动美国安全讨论</h3>
+          <p>GLM-5.2 被外媒用于说明中国模型在部分网络安全/网页生成任务上缩小差距；这是事实报道，不等同于全能力领先。<a href="https://www.axios.com/2026/06/25/china-glm-52-open-source-hackers" target="_blank" rel="noopener">来源</a></p>
+        </article>
+        <article class="card summary">
+          <span class="tag blue">GitHub 热点</span>
+          <h3>Agent、安全与沙箱工具占据 Trending</h3>
+          <p>7 月 2 日 GitHub Trending 可见 agency-agents、strix、Vibe-Trading、VulnClaw、TencentCloud CubeSandbox、video-use 等 AI/Agent 项目。<a href="https://github.com/trending?since=daily" target="_blank" rel="noopener">来源</a></p>
+        </article>
       </div>
     </section>
+
     <section>
       <h2>AI 资讯分类</h2>
       <div class="two">
-        <article class="card"><span class="tag blue">模型进展</span><div class="item"><h3>前沿能力进入分级访问阶段</h3><p>GPT-5.6 的受限预览继续影响行业节奏，最强模型能力可能先进入政府、可信伙伴和高安全客户环境，再逐步扩散。</p></div><div class="item"><h3>安全评测成为模型发布产品的一部分</h3><p>模型能力、价格、上下文、工具调用之外，cyber 能力、滥用风险和访问资格正在变成产品说明书的一部分。</p></div></article>
-        <article class="card"><span class="tag rose">政策舆情</span><div class="item"><h3>美国从个案干预走向标准化</h3><p>白宫推动自愿标准，说明政府不希望每次前沿模型发布都临时协调；标准化有助于产业预期，但也会形成事实准入门槛。</p></div><div class="item"><h3>中国开源模型仍是政策压力来源</h3><p>如果美国对闭源模型访问加强管理，开源模型的全球扩散会变成竞争变量，也会被纳入安全标准讨论。</p></div></article>
-        <article class="card"><span class="tag slate">上下游产业</span><div class="item"><h3>数据中心资产开始被重新定价</h3><p>Meta 如果将多余 AI 算力商业化，意味着超大厂可能从内部成本中心变成外部算力供给方，冲击云与 GPU 租赁市场。</p></div><div class="item"><h3>Agent 基建从框架走向运维</h3><p>企业更关心动态子 Agent、状态感知评测、检索质量、权限隔离、成本可控，而不是单纯调用模型。</p></div></article>
-        <article class="card"><span class="tag amber">下游应用市场</span><div class="item"><h3>AI 工具垂直化继续</h3><p>GitHub Trending 和开发者社区显示，投资研究、视频编辑、安全扫描、文档处理等垂直工具仍是开发热点。</p></div><div class="item"><h3>文档工作流优先商业化</h3><p>企业文档链路天然有明确输入、输出、审批和审计要求，适合作为 Agent 落地的第一批稳定场景。</p></div></article>
+        <article class="card">
+          <span class="tag blue">模型进展</span>
+          <div class="item">
+            <h3>闭源旗舰模型：从“直接上线”转向“预览名单”</h3>
+            <p>OpenAI GPT-5.6 与 Anthropic Fable/Mythos 的共同信号是：模型能力越接近高级 cyber/生物/长程自动化，发布流程越需要外部审查和分级访问。</p>
+          </div>
+          <div class="item">
+            <h3>中国模型：开源与低成本继续是竞争变量</h3>
+            <p>GLM-5.2、Qwen-AgentWorld、Qwen-RobotWorld、MiniMax Sparse Attention 等近期内容说明，国内路线在开放权重、具身世界模型和长上下文降本上持续推进。</p>
+          </div>
+        </article>
+        <article class="card">
+          <span class="tag red">政策舆情</span>
+          <div class="item">
+            <h3>美国政策重心从芯片扩展到模型访问</h3>
+            <p>以前主要管制先进芯片和云算力，近期报道显示政府开始直接影响模型发布节奏。判断：这会提高美国大模型公司的合规成本，也会抬高可信客户门槛。</p>
+          </div>
+          <div class="item">
+            <h3>开放模型成为安全治理难题</h3>
+            <p>闭源模型可通过 API、KYC、速率限制治理；开源模型一旦下载部署，约束更难执行。这是 GLM-5.2 报道中反复出现的政策焦点。</p>
+          </div>
+        </article>
+        <article class="card">
+          <span class="tag amber">上下游产业</span>
+          <div class="item">
+            <h3>AI 数据中心从“抢 GPU”进入“卖利用率”</h3>
+            <p>Meta 如将过剩算力对外销售，会把内部基础设施变成潜在收入源，同时给 AWS、Azure、Google Cloud、CoreWeave、Oracle、xAI Colossus 等带来新竞争。</p>
+          </div>
+          <div class="item">
+            <h3>Agent 基础设施更像云原生运维</h3>
+            <p>LangChain 与 LlamaIndex 更新集中在运行时、沙箱、检索、观测、评测、文件工具和记忆，说明应用层正在从 demo 走向生产治理。</p>
+          </div>
+        </article>
+        <article class="card">
+          <span class="tag green">下游应用市场</span>
+          <div class="item">
+            <h3>企业文档智能仍是最清晰落点</h3>
+            <p>KYC、票据、理赔、法务、投研、合同审阅等场景有明确输入、审计和 ROI，更适合作为 Agent 收费入口。</p>
+          </div>
+          <div class="item">
+            <h3>AI 安全工具需求上行</h3>
+            <p>GitHub Trending 中 strix、VulnClaw 等项目显示，AI 渗透测试、MCP 工具链和自动报告仍是开发者高关注方向，但也需要避免被滥用。</p>
+          </div>
+        </article>
       </div>
     </section>
+
     <section>
       <h2>公司动向</h2>
       <div class="two">
-        <article class="card"><span class="tag blue">国外公司</span><div class="company"><div><strong>Meta</strong><small>美国 · 模型/算力</small></div><p>被曝考虑出售过剩 AI 算力，股价受消息提振；建议关注是否形成正式云产品、是否绑定 Llama/Muse 系列模型。<a href="https://nypost.com/2026/07/01/business/meta-shares-jump-10-on-report-its-selling-excess-ai-computing-power/" target="_blank" rel="noopener">来源</a></p></div><div class="company"><div><strong>OpenAI</strong><small>美国 · 模型</small></div><p>GPT-5.6 仍是监管标准讨论的核心案例；关注 API 扩围、价格和可信伙伴名单。</p></div><div class="company"><div><strong>Anthropic</strong><small>美国 · 模型/安全</small></div><p>其模型限制事件正在变成白宫标准制定的参考案例；关注 RSP 与政府 cyber 标准如何对齐。</p></div></article>
-        <article class="card"><span class="tag green">中国境内公司</span><div class="company"><div><strong>智谱 / Z.ai</strong><small>中国 · 开源模型</small></div><p>GLM-5.2 的海外讨论继续围绕 coding、agent 与 cyber 能力；建议跟踪云平台接入和企业部署案例。</p></div><div class="company"><div><strong>阿里 Qwen</strong><small>中国 · 模型/具身智能</small></div><p>Qwen-RobotWorld 方向继续代表国产模型向世界模型、仿真和具身智能延展的趋势。</p></div><div class="company"><div><strong>MiniMax</strong><small>中国 · 长上下文</small></div><p>稀疏注意力与低成本长上下文路线值得持续跟踪，直接影响文档智能和 Agent 成本结构。</p></div></article>
+        <article class="card">
+          <span class="tag blue">国外公司</span>
+          <div class="company">
+            <div><strong>OpenAI</strong><small>模型公司</small></div>
+            <p>GPT-5.6 Sol/Terra/Luna 处限制预览期；事实来自媒体报道，后续重点是 API 扩围、价格和安全框架说明。<a href="https://www.axios.com/2026/06/26/openai-gpt-sol-terra-luna-trump" target="_blank" rel="noopener">Axios</a></p>
+          </div>
+          <div class="company">
+            <div><strong>Anthropic</strong><small>模型/安全</small></div>
+            <p>Fable 5 恢复、Mythos 5 有限部署强化其“安全先行”定位；同时说明政府管制会影响模型分发。<a href="https://www.theguardian.com/technology/2026/jul/01/anthropic-fable-mythos-ai-models-us-export-controls-lifted" target="_blank" rel="noopener">Guardian</a></p>
+          </div>
+          <div class="company">
+            <div><strong>Meta AI</strong><small>模型/算力</small></div>
+            <p>据报道考虑出售 AI 算力；若落地，Meta 会从 Llama/应用公司进一步靠近 GPU 云供给方。<a href="https://www.businessinsider.com/meta-stock-cloud-computing-ai-compute-tech-stocks-data-centers-2026-7" target="_blank" rel="noopener">BI</a></p>
+          </div>
+          <div class="company">
+            <div><strong>Microsoft / AWS / Google Cloud</strong><small>云计算</small></div>
+            <p>今日未见重大官方发布；判断：若 Meta 进入外部算力市场，三大云的 AI GPU 定价、托管模型和企业合规能力会被重新比较。</p>
+          </div>
+          <div class="company">
+            <div><strong>NVIDIA</strong><small>芯片/系统</small></div>
+            <p>今日未见重大官方发布；H100/H200/B 系列供应、NVLink 组网和数据中心功耗仍是 AI CapEx 叙事核心变量。</p>
+          </div>
+          <div class="company">
+            <div><strong>Google DeepMind / Apple / xAI</strong><small>模型与终端</small></div>
+            <p>今日未见重大官方发布；关注 DeepMind 世界模型与 Gemini 生态、Apple 端侧 AI、xAI 超大数据中心与 Grok 分发。</p>
+          </div>
+          <div class="company">
+            <div><strong>Mistral / Cohere / Perplexity</strong><small>模型与搜索</small></div>
+            <p>今日未见重大官方发布；欧洲模型、企业 RAG 和 AI 搜索仍是差异化战场。</p>
+          </div>
+          <div class="company">
+            <div><strong>Scale AI / Databricks / Snowflake / Hugging Face / Stability AI</strong><small>数据、平台、开源、生成媒体</small></div>
+            <p>今日未见重大官方发布；关注数据标注到评测平台、企业数据云与开源模型托管的商业化速度。</p>
+          </div>
+        </article>
+
+        <article class="card">
+          <span class="tag violet">中国境内公司</span>
+          <div class="company">
+            <div><strong>智谱 / Z.ai</strong><small>开源模型</small></div>
+            <p>GLM-5.2 引发海外安全讨论；事实是部分 cyber/网页生成能力被关注，判断是开源扩散会持续进入美国监管议程。<a href="https://www.axios.com/2026/06/25/china-glm-52-open-source-hackers" target="_blank" rel="noopener">Axios</a></p>
+          </div>
+          <div class="company">
+            <div><strong>阿里云 / 通义 Qwen</strong><small>大模型/具身智能</small></div>
+            <p>Qwen-AgentWorld、Qwen-RobotWorld、RobotNav、RobotManip 等 6 月论文把 Qwen 扩展到语言世界模型和机器人世界模型。<a href="https://arxiv.org/abs/2606.24597" target="_blank" rel="noopener">AgentWorld</a> · <a href="https://arxiv.org/abs/2606.17030" target="_blank" rel="noopener">RobotWorld</a></p>
+          </div>
+          <div class="company">
+            <div><strong>MiniMax</strong><small>长上下文/多模态</small></div>
+            <p>MiniMax Sparse Attention 论文显示，其 109B 多模态模型在 1M 上下文下将每 token 注意力计算降至约 1/28.4。<a href="https://arxiv.org/abs/2606.13392" target="_blank" rel="noopener">arXiv</a></p>
+          </div>
+          <div class="company">
+            <div><strong>腾讯云</strong><small>Agent 沙箱</small></div>
+            <p>GitHub Trending 今日可见 TencentCloud / CubeSandbox，定位为 AI Agents 的并发、安全、轻量沙箱。<a href="https://github.com/trending?since=daily" target="_blank" rel="noopener">GitHub Trending</a></p>
+          </div>
+          <div class="company">
+            <div><strong>百度 / 文心</strong><small>模型与搜索应用</small></div>
+            <p>今日未见重大官方发布；关注文心模型在搜索、办公、智能体平台和 Apollo 自动驾驶中的落地。</p>
+          </div>
+          <div class="company">
+            <div><strong>字节跳动 / 豆包</strong><small>应用与多模态</small></div>
+            <p>今日未见重大官方发布；继续关注豆包在视频、办公、广告生成和云模型服务中的商业化节奏。</p>
+          </div>
+          <div class="company">
+            <div><strong>华为 / 昇腾 / 盘古</strong><small>芯片与行业模型</small></div>
+            <p>今日未见重大官方发布；国产算力供给、ModelArts、行业大模型和政企适配仍是长期主线。</p>
+          </div>
+          <div class="company">
+            <div><strong>月之暗面 / 零一万物 / 阶跃星辰 / 商汤 / 寒武纪</strong><small>模型、应用、芯片</small></div>
+            <p>今日未见重大官方发布；关注 Kimi 长上下文、Yi 系列商业化、Step 多模态、商汤视觉/空间智能、寒武纪国产 AI 芯片订单。</p>
+          </div>
+        </article>
       </div>
     </section>
+
     <section>
       <h2>行业影响分析</h2>
       <div class="impact">
-        <article class="card"><span class="tag rose">政治</span><h3>前沿模型准入制度化</h3><p>自愿标准可能成为事实监管框架，影响美国模型国际发布和伙伴准入。</p></article>
-        <article class="card"><span class="tag slate">产业</span><h3>算力供给格局更复杂</h3><p>Meta 等大厂若出租算力，将改变云厂商、GPU 云和模型公司的边界。</p></article>
-        <article class="card"><span class="tag amber">经济</span><h3>CapEx 必须解释 ROI</h3><p>AI 数据中心投资从“抢资源”进入“证明利用率和现金流”的阶段。</p></article>
-        <article class="card"><span class="tag green">金融</span><h3>估值更看变现路径</h3><p>硬件链仍受益，但市场会奖励能把模型能力转为收入的云、平台和应用层。</p></article>
+        <article class="card">
+          <span class="tag red">政治</span>
+          <h3>模型成为战略资产</h3>
+          <p>美国正把最强模型纳入国家安全框架；这会提升政府对模型发布节奏、客户准入和跨境服务的影响力。</p>
+        </article>
+        <article class="card">
+          <span class="tag amber">产业</span>
+          <h3>算力市场边界被打散</h3>
+          <p>大模型公司、社交平台、云厂商、GPU 云和数据中心运营商的边界变模糊，竞争焦点从 GPU 数量转向可用率与单位经济。</p>
+        </article>
+        <article class="card">
+          <span class="tag green">经济</span>
+          <h3>AI CapEx 要证明现金回报</h3>
+          <p>资本开支继续高企时，投资人会追问闲置算力、客户锁定、折旧周期、电力成本和模型收入是否能闭环。</p>
+        </article>
+        <article class="card">
+          <span class="tag blue">金融</span>
+          <h3>估值从愿景转向验证</h3>
+          <p>硬件链仍受益，但股票市场会更偏好能把算力和模型能力变成可计量收入的公司，纯烧钱叙事折价扩大。</p>
+        </article>
       </div>
     </section>
+
     <section>
       <h2>后续关注清单</h2>
       <ul class="watch">
-        <li><strong>白宫标准细则：</strong>关注 cyber benchmark、frontier model 阈值、可信伙伴机制。</li>
-        <li><strong>GPT-5.6 扩围：</strong>看是否从受限预览进入更广泛 API 和 ChatGPT 可用。</li>
-        <li><strong>Meta 算力商业化：</strong>关注产品形态、定价、客户群和是否绑定自有模型。</li>
-        <li><strong>Agent 运行时：</strong>关注评测、沙箱、权限、状态管理和成本优化。</li>
-        <li><strong>中国开源模型：</strong>跟踪 GLM、Qwen、MiniMax 的海外生态采用和政策反馈。</li>
-        <li><strong>文档智能成交：</strong>关注金融、KYC、法务和合同场景的真实付费案例。</li>
+        <li><strong>OpenAI GPT-5.6 扩围：</strong>关注是否在 7 月内从限制预览进入更广泛 API 或 ChatGPT 可用。</li>
+        <li><strong>美国 frontier model 标准：</strong>关注 cyber benchmark、覆盖模型阈值、可信客户机制和申诉流程。</li>
+        <li><strong>Anthropic Mythos 部署名单：</strong>关注获批安全机构范围、出口限制是否转为稳定规则。</li>
+        <li><strong>Meta 算力商业化：</strong>关注公司是否确认、定价形态、是否绑定 Llama/Muse 模型。</li>
+        <li><strong>Agent 沙箱与安全：</strong>关注 LangChain、Tencent CubeSandbox、GitHub Trending 安全工具的企业采用。</li>
+        <li><strong>中国开源模型扩散：</strong>跟踪 GLM、Qwen、MiniMax 在 Hugging Face、GitHub、OpenRouter、企业私有化中的采用。</li>
+        <li><strong>文档智能成交：</strong>关注 LlamaIndex、LangChain、Databricks、Snowflake 在金融、法务、保险场景的真实付费案例。</li>
+        <li><strong>芯片与数据中心：</strong>关注 NVIDIA、华为昇腾、寒武纪、CoreWeave、AWS、Azure、Google Cloud 的供给和电力约束。</li>
       </ul>
     </section>
   </main>
+
   <footer>
     <div class="wrap">
       <h2>今日已检查的固定信息源</h2>
       <div class="source-list">
-        <div class="source"><strong><a href="https://www.latent.space/" target="_blank" rel="noopener">Latent Space</a></strong><br>已检查；未确认 7 月 2 日重大更新。</div>
-        <div class="source"><strong><a href="https://thesequence.substack.com/" target="_blank" rel="noopener">The Sequence</a></strong><br>已检查；Substack 文本抓取可见性有限，未确认重大更新。</div>
-        <div class="source"><strong><a href="https://www.deeplearning.ai/the-batch" target="_blank" rel="noopener">The Batch · DeepLearning.AI</a></strong><br>已检查；页面最新可见期为 2026-05-29，主题包括 Gemini Flash 价格、AI Act 延迟和 agents 流量。</div>
-        <div class="source"><strong><a href="https://a16z.com/ai/" target="_blank" rel="noopener">a16z AI</a></strong><br>已检查；最新区块包含 AI agents、客户数据、AI PC、NVIDIA 与 AI 基础设施相关内容。</div>
-        <div class="source"><strong><a href="https://www.langchain.com/blog" target="_blank" rel="noopener">LangChain Blog</a></strong><br>已检查；Agent 工程化、检索、评测与运行时治理仍是重点。</div>
-        <div class="source"><strong><a href="https://www.llamaindex.ai/blog" target="_blank" rel="noopener">LlamaIndex Blog</a></strong><br>已检查；文档解析、Retrieval Harness、LlamaParse 工作流继续更新。</div>
-        <div class="source"><strong><a href="https://github.com/trending?since=daily" target="_blank" rel="noopener">GitHub Trending</a></strong><br>已检查；AI agent、垂直工具和安全自动化仍是社区热点。</div>
+        <div class="source">
+          <strong><a href="https://www.latent.space/" target="_blank" rel="noopener">Latent Space</a></strong>
+          <p>已检查；Substack 首页需 JavaScript，公开文本未显示 2026-07-02 重大更新，按“已检查，无重大更新”处理。</p>
+        </div>
+        <div class="source">
+          <strong><a href="https://thesequence.substack.com/" target="_blank" rel="noopener">The Sequence</a></strong>
+          <p>已检查；Substack 首页需 JavaScript，公开文本未显示 2026-07-02 重大更新，按“已检查，无重大更新”处理。</p>
+        </div>
+        <div class="source">
+          <strong><a href="https://www.deeplearning.ai/the-batch" target="_blank" rel="noopener">The Batch · DeepLearning.AI</a></strong>
+          <p>已检查；页面最新可见期为 2026-05-29《Gemini Flash Gets Pricey, AI Act Delays, Agents Drive Online Traffic》，无今日重大更新。</p>
+        </div>
+        <div class="source">
+          <strong><a href="https://a16z.com/ai/" target="_blank" rel="noopener">a16z AI</a></strong>
+          <p>已检查；最新区块包括 AI agents、客户数据、AI PC、GPU server 和基础设施内容，无确认的 2026-07-02 重大更新。</p>
+        </div>
+        <div class="source">
+          <strong><a href="https://www.langchain.com/blog" target="_blank" rel="noopener">LangChain Blog</a></strong>
+          <p>已检查；2026-07-01 可见 OpenWiki、Deep Agents RLM、Pendo/LangSmith 案例等更新，已纳入开发者生态部分。</p>
+        </div>
+        <div class="source">
+          <strong><a href="https://www.llamaindex.ai/blog" target="_blank" rel="noopener">LlamaIndex Blog</a></strong>
+          <p>已检查；2026-06-29 Retrieval Harness 更新，企业文档检索与 Agent 文件工具链已纳入应用市场部分。</p>
+        </div>
+        <div class="source">
+          <strong><a href="https://github.com/trending?since=daily" target="_blank" rel="noopener">GitHub Trending</a></strong>
+          <p>已检查；今日可见 AI agency、AI 安全、AI 交易、Agent 沙箱、视频编辑 Agent 等项目，已纳入摘要。</p>
+        </div>
       </div>
-      <p>说明：本页为 2026-07-02 定时失败后的补发版；已将后台运行时迁移到隐藏目录，修复 Documents 权限导致的 LaunchAgent 启动失败。</p>
+      <p class="note">说明：本页区分事实、媒体报道和判断。媒体爆料未获公司正式确认时已使用“据报道/可能/若落地”等表述。</p>
     </div>
   </footer>
 </body>

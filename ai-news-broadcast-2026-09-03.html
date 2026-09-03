@@ -5,64 +5,375 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>AI 最新资讯每日播报｜2026-09-03</title>
   <style>
-    :root{--ink:#17202a;--muted:#5d6b7a;--line:#d9e1e8;--bg:#f6f8fb;--panel:#fff;--blue:#2457c5;--green:#0f7b5f;--amber:#a15c00;--rose:#b33a4b;--slate:#2c3e50;--violet:#6546a3}
-    *{box-sizing:border-box}body{margin:0;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","PingFang SC","Microsoft YaHei",sans-serif;color:var(--ink);background:var(--bg);line-height:1.58}a{color:var(--blue);text-decoration:none}a:hover{text-decoration:underline}
-    .hero{background:linear-gradient(135deg,#17323f,#0d735f 58%,#8a6a24);color:#fff;padding:34px 18px 26px}.wrap{width:min(1120px,calc(100% - 32px));margin:0 auto}.hero h1{margin:0 0 12px;font-size:clamp(28px,6vw,52px);line-height:1.08}.lead{max-width:980px;margin:0;color:rgba(255,255,255,.92)}.meta{display:flex;flex-wrap:wrap;gap:8px;margin-top:14px}.pill{display:inline-flex;padding:5px 10px;border:1px solid rgba(255,255,255,.32);border-radius:999px;background:rgba(255,255,255,.08);font-size:13px}
-    main{padding:24px 0 36px}section{margin-bottom:24px}h2{margin:0 0 12px;font-size:22px;line-height:1.25}h3{margin:0 0 8px;font-size:17px;line-height:1.35}.grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px}.two,.impact{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}.card{background:var(--panel);border:1px solid var(--line);border-radius:8px;padding:14px;box-shadow:0 1px 2px rgba(23,32,42,.04)}.summary{border-left:4px solid var(--blue);min-height:156px}.tag{display:inline-block;margin-bottom:8px;padding:2px 8px;border-radius:999px;font-size:12px;font-weight:650}.blue{color:var(--blue);background:#e8f0ff}.green{color:var(--green);background:#e7f5ef}.amber{color:var(--amber);background:#fff3dd}.rose{color:var(--rose);background:#ffecef}.slate{color:var(--slate);background:#edf1f5}.violet{color:var(--violet);background:#f0eaff}.card p,.item p,.impact-list li{margin:6px 0 0;color:var(--muted);font-size:14px}.item{padding:13px 0;border-top:1px solid var(--line)}.item:first-child{border-top:0;padding-top:0}.company{display:grid;grid-template-columns:132px minmax(0,1fr);gap:10px;padding:12px 0;border-top:1px solid var(--line)}.company:first-child{border-top:0;padding-top:0}.company small{display:block;color:var(--muted)}.impact-list{margin:8px 0 0;padding-left:18px}.impact-list strong{color:var(--ink)}.logic{margin-top:10px;padding:10px;border:1px solid var(--line);border-radius:8px;background:#f9fbfd;color:var(--muted);font-size:14px}.watch{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px;padding:0;list-style:none}.watch li{background:#fff;border:1px solid var(--line);border-radius:8px;padding:12px}footer{padding:24px 0 36px;background:#eef3f8;color:var(--muted);font-size:14px}.source-list{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}.source{background:#fff;border:1px solid var(--line);border-radius:8px;padding:10px}.note{margin-top:12px;color:var(--muted);font-size:13px}@media(max-width:860px){.grid,.two,.impact,.watch,.source-list{grid-template-columns:1fr}.company{grid-template-columns:1fr}.hero{padding-top:28px}}
+    :root {
+      color-scheme: light;
+      --bg: #f4f7fb;
+      --ink: #172033;
+      --muted: #607086;
+      --line: #dbe4ef;
+      --panel: #ffffff;
+      --blue: #265cce;
+      --green: #167a5a;
+      --amber: #9a6100;
+      --red: #ba3b32;
+      --violet: #6b4bc4;
+      --shadow: 0 12px 30px rgba(35, 52, 85, .08);
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC", "Microsoft YaHei", Arial, sans-serif;
+      color: var(--ink);
+      background:
+        linear-gradient(180deg, rgba(38,92,206,.08), transparent 360px),
+        var(--bg);
+      line-height: 1.65;
+    }
+    a { color: var(--blue); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    .wrap { width: min(1160px, calc(100% - 32px)); margin: 0 auto; }
+    header.hero {
+      padding: 46px 0 28px;
+      border-bottom: 1px solid var(--line);
+    }
+    .kicker {
+      display: inline-flex;
+      gap: 8px;
+      align-items: center;
+      margin-bottom: 14px;
+      padding: 5px 10px;
+      border: 1px solid rgba(38,92,206,.22);
+      border-radius: 999px;
+      color: var(--blue);
+      background: rgba(255,255,255,.74);
+      font-size: 13px;
+      font-weight: 700;
+    }
+    h1 {
+      margin: 0 0 10px;
+      font-size: clamp(30px, 6vw, 56px);
+      line-height: 1.08;
+      letter-spacing: 0;
+    }
+    .lead {
+      margin: 0;
+      max-width: 860px;
+      color: #41516a;
+      font-size: 18px;
+    }
+    .meta {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-top: 18px;
+      color: var(--muted);
+      font-size: 14px;
+    }
+    .meta span {
+      padding: 6px 10px;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      background: rgba(255,255,255,.72);
+    }
+    main { padding: 28px 0 46px; }
+    section {
+      margin: 24px 0;
+      padding: 24px;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      background: var(--panel);
+      box-shadow: var(--shadow);
+    }
+    h2 {
+      margin: 0 0 16px;
+      font-size: 24px;
+      line-height: 1.25;
+    }
+    h3 {
+      margin: 0 0 8px;
+      font-size: 17px;
+      line-height: 1.35;
+    }
+    p { margin: 0 0 10px; }
+    ul { padding-left: 20px; margin: 8px 0 0; }
+    li { margin: 8px 0; }
+    .grid { display: grid; gap: 14px; }
+    .summary-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+    .card {
+      padding: 16px;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      background: #fbfdff;
+    }
+    .tag {
+      display: inline-block;
+      margin-bottom: 8px;
+      padding: 3px 8px;
+      border-radius: 999px;
+      color: #fff;
+      background: var(--blue);
+      font-size: 12px;
+      font-weight: 700;
+    }
+    .tag.green { background: var(--green); }
+    .tag.amber { background: var(--amber); }
+    .tag.red { background: var(--red); }
+    .tag.violet { background: var(--violet); }
+    .cols { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 16px; }
+    .company-list {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 12px;
+    }
+    .impact {
+      display: grid;
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+      gap: 14px;
+    }
+    .impact .card { background: #fff; }
+    .field {
+      margin: 9px 0;
+      padding-top: 9px;
+      border-top: 1px dashed #d8e2ee;
+    }
+    .field b {
+      display: block;
+      margin-bottom: 3px;
+      color: #25334b;
+    }
+    .status {
+      display: inline-block;
+      padding: 2px 7px;
+      border-radius: 6px;
+      background: #edf7f3;
+      color: var(--green);
+      font-weight: 700;
+      font-size: 13px;
+    }
+    .status.warn { background: #fff3df; color: var(--amber); }
+    footer {
+      padding: 28px 0 42px;
+      color: var(--muted);
+      border-top: 1px solid var(--line);
+      font-size: 14px;
+    }
+    .source-table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 12px;
+      overflow-wrap: anywhere;
+    }
+    .source-table th, .source-table td {
+      padding: 10px;
+      border: 1px solid var(--line);
+      text-align: left;
+      vertical-align: top;
+    }
+    .source-table th { background: #f6f9fd; color: #34445c; }
+    @media (max-width: 880px) {
+      .summary-grid, .cols, .company-list, .impact { grid-template-columns: 1fr; }
+      section { padding: 18px; }
+      header.hero { padding-top: 34px; }
+    }
   </style>
 </head>
 <body>
-  <header class="hero"><div class="wrap">
-    <h1>AI 最新资讯每日播报｜2026-09-03</h1>
-    <p class="lead">今日主线：前沿模型没有出现单一颠覆性发布，公开信息更集中在企业 Agent 生产化、模型安全评估、文档数据层、推理成本与算力回收。判断口径保持审慎：官方源优先，抓取受限源明示状态。</p>
-    <div class="meta"><span class="pill">更新：2026-09-03 09:35 CST</span><span class="pill">播报日期：Asia/Shanghai</span><span class="pill">本地生成，未执行发布/推送</span><span class="pill">固定源逐一检查</span></div>
-  </div></header>
+  <header class="hero">
+    <div class="wrap">
+      <div class="kicker">每日公开信息检索版</div>
+      <h1>AI 最新资讯每日播报｜2026-09-03</h1>
+      <p class="lead">今天的主线不是单一模型发布，而是“长程 Agent + 网络安全能力 + 推理基础设施”的同步加速：Google、Anthropic、Meta、阿里、腾讯、智谱都在把模型推向更长上下文和更高自主度，监管与算力金融化压力也同步上升。</p>
+      <div class="meta">
+        <span>更新时间：2026-09-03 17:36 CST</span>
+        <span>覆盖窗口：2026-09-01 至 2026-09-03 公开信息</span>
+        <span>事实优先级：官方公告 / 产品文档 &gt; 权威媒体 &gt; 趋势聚合</span>
+      </div>
+    </div>
+  </header>
+
   <main class="wrap">
-    <section><h2>今日核心摘要</h2><div class="grid">
-      <article class="card summary"><span class="tag green">Agent 工程</span><h3>LangChain 发布 Commerce Agents 文章</h3><p>LangChain Blog 2026-09-03 可见 Shopify 联合创始人 Tobias Lutke 讨论 commerce agents，继续把 Agent 从 demo 推向可观测、可评估、可接入业务流程的生产系统。<a href="https://www.langchain.com/blog" target="_blank" rel="noopener">来源</a></p></article>
-      <article class="card summary"><span class="tag blue">模型进展</span><h3>The Sequence 聚焦推理模型蒸馏</h3><p>The Sequence 公开归档显示约 22 小时内更新“Deep Dive on Reasoning Models Distillation”，说明开源和企业侧正在用蒸馏降低推理成本、延迟和部署门槛。<a href="https://thesequence.substack.com/archive" target="_blank" rel="noopener">来源</a></p></article>
-      <article class="card summary"><span class="tag rose">安全治理</span><h3>OpenAI、Anthropic 延续安全评估公开化</h3><p>OpenAI 2026-09-02 发布 GPT-5.2 system card，Anthropic 2026-09-01 发布 ASL-3 deployment and testing，安全边界、能力阈值和部署测试继续成为模型发布的必要配套。<a href="https://openai.com/index/" target="_blank" rel="noopener">来源</a> <a href="https://www.anthropic.com/news" target="_blank" rel="noopener">来源</a></p></article>
-      <article class="card summary"><span class="tag slate">文档数据层</span><h3>LlamaIndex 继续强化企业文档工作流</h3><p>LlamaIndex Blog 近期围绕 ExtractBench、LlamaParse、文档抽取和工作流编排更新；RAG 的竞争点正从“能接入数据”变为“能稳定抽取、追溯和评估”。<a href="https://www.llamaindex.ai/blog" target="_blank" rel="noopener">来源</a></p></article>
-      <article class="card summary"><span class="tag amber">算力平台</span><h3>AI factory 继续绑定 CapEx 和利用率</h3><p>NVIDIA 官方博客持续以 AI factory、数据中心系统、推理计算和企业基础设施为主线；资本市场后续仍会追问订单质量、电力、折旧和客户负载。<a href="https://blogs.nvidia.com/" target="_blank" rel="noopener">来源</a></p></article>
-      <article class="card summary"><span class="tag violet">开发者生态</span><h3>GitHub Trending 显示 AI coding 与 Agent 工具热度</h3><p>今日已检查 GitHub Trending；开发者侧热度仍集中在 Agent、AI coding、本地模型部署、自动化工作流和数据处理工具，与固定源的生产化主题一致。<a href="https://github.com/trending" target="_blank" rel="noopener">来源</a></p></article>
-    </div></section>
+    <section>
+      <h2>今日核心摘要</h2>
+      <div class="grid summary-grid">
+        <article class="card">
+          <span class="tag">模型进展</span>
+          <h3>Google 发布 Gemini 3.8 Flash 与 3.8 Flash Cyber</h3>
+          <p>Google 2026-09-02 宣布 Gemini 3.8 Flash，强调长程软件工程、Agent 工作流和复杂推理；开发者文档显示模型支持 1,048,576 输入 token、65,536 输出 token、代码执行、计算机使用预览、文件搜索和 Search grounding。Cyber 版本通过 Fairwind Program 面向可信防御者开放。<a href="https://blog.google/innovation-and-ai/models-and-research/gemini-models/3-8-flash-and-3-8-flash-cyber/" target="_blank" rel="noopener">Google 博客</a> / <a href="https://ai.google.dev/gemini-api/docs/models/gemini-3.8-flash" target="_blank" rel="noopener">Gemini API 文档</a></p>
+        </article>
+        <article class="card">
+          <span class="tag red">安全与伦理</span>
+          <h3>OpenAI Astra 的“Critical”网络安全能力成为监管焦点</h3>
+          <p>OpenAI 8 月已披露 Astra 内部评估触及 Preparedness Framework 下的 critical cyber 能力，Axios 2026-09-03 报道称 Sam Altman 认可美国政府对高级模型的自愿审查流程；WSJ 和 The Verge 则强调其受限发布、安全监控与可解释性争议。事实：OpenAI 已确认不能排除 critical cyber 能力；判断：Astra 会把“发布前政府审查”推成事实标准。<a href="https://openai.com/index/responding-next-frontier-critical-cyber-capabilities/" target="_blank" rel="noopener">OpenAI</a> / <a href="https://www.axios.com/2026/09/03/altman-government-scrutiny-ai-g20" target="_blank" rel="noopener">Axios</a></p>
+        </article>
+        <article class="card">
+          <span class="tag">模型进展</span>
+          <h3>Anthropic 推 Claude Fable 5.1 / Mythos 5.1</h3>
+          <p>Anthropic 2026-09-01 发布 Fable 5.1 和 Mythos 5.1。Fable 5.1 面向编码、知识工作、长程 Agent 和企业流程，缓存读取价格降至每百万 token 0.25 美元，典型工作负载成本估计下降 25%，高度 Agent 任务最多下降约 45%；Mythos 5.1 继续限制给经审核的网络防御和生命科学组织。<a href="https://www.anthropic.com/claude/fable" target="_blank" rel="noopener">Fable</a> / <a href="https://www.anthropic.com/claude/mythos" target="_blank" rel="noopener">Mythos</a></p>
+        </article>
+        <article class="card">
+          <span class="tag">模型进展</span>
+          <h3>Meta Muse Spark 1.3 强化编码与 Agent 工作流</h3>
+          <p>Meta AI Research 2026-09-02 发布 Muse Spark 1.3，官方称其在 Agentic workflows、Coding、抗 prompt injection、不可逆操作判断等方面增强，并上线 Muse Code 与 Meta Model API。Meta 仍在追赶 OpenAI、Anthropic、Google，但把“个人超级智能”落脚到编码与多工作流执行。<a href="https://research.meta.ai/blog/introducing-muse-spark-1-3" target="_blank" rel="noopener">Meta AI Research</a></p>
+        </article>
+        <article class="card">
+          <span class="tag green">中国大模型</span>
+          <h3>阿里百炼上架 qwen3.8-max-0902，腾讯混元 Hy4 preview 进入迁移窗口</h3>
+          <p>阿里云百炼模型表显示 2026-09-02 上架 qwen3.8-max-0902，覆盖北京、新加坡、美国弗吉尼亚等部署范围，强调编码、协作智能体、视觉理解和 100 万上下文。腾讯云公告要求混元旧版图像/视频/3D 接口在 2026-09-30 前迁移至 TokenHub，新版 HY-Image-3.0、HY-Video-1.5、HY-3D-3.1 被列为替代。<a href="https://help.aliyun.com/zh/model-studio/newly-released-models" target="_blank" rel="noopener">阿里云百炼</a> / <a href="https://cloud.tencent.cn/announce/detail/2405" target="_blank" rel="noopener">腾讯云公告</a></p>
+        </article>
+        <article class="card">
+          <span class="tag green">中国大模型</span>
+          <h3>智谱 GLM-5.3-Flash 与腾讯 Hy4 preview 延续国产开源前沿竞争</h3>
+          <p>Hugging Face 模型卡显示 GLM-5.3-Flash 为 320B 总参数、18B 激活参数、MIT 许可、原生多模态并支持长上下文；腾讯 2026-08-28 发布并开源 Hy4 preview，总参数 770B、激活 49B、上下文突破 1M，接入 WorkBuddy、CodeBuddy、元宝、ima、腾讯云 TokenHub 和 OpenRouter。<a href="https://huggingface.co/zai-org/GLM-5.3-Flash" target="_blank" rel="noopener">GLM-5.3-Flash</a> / <a href="https://www.tencent.com/zh-cn/tencent-releases-and-open-sources-tencent-hy4-preview/" target="_blank" rel="noopener">腾讯</a></p>
+        </article>
+        <article class="card">
+          <span class="tag amber">上下游产业</span>
+          <h3>推理基础设施从云算力扩展到数据中心互联</h3>
+          <p>Equinix 2026-09-02 宣布与 NVIDIA、Together AI 合作推出 Inference Exchange，计划 2027 年 Q1 上线，目标是让企业把开放模型推理部署到更靠近数据、用户和合规边界的位置。NVIDIA 2026-08-26 财报显示 FY2027 Q2 营收 962 亿美元，数据中心收入 890 亿美元，同比增长 117%。<a href="https://equinix.mediaroom.com/2026-09-02-Equinix-Accelerates-AI-Inference-for-Enterprises-with-NVIDIA-and-Together-AI" target="_blank" rel="noopener">Equinix</a> / <a href="https://investor.nvidia.com/news/press-release-details/2026/NVIDIA-Announces-Financial-Results-for-Second-Quarter-Fiscal-2027/default.aspx" target="_blank" rel="noopener">NVIDIA</a></p>
+        </article>
+        <article class="card">
+          <span class="tag violet">政策舆情</span>
+          <h3>欧洲和中国同步加强 AI 透明度与平台责任</h3>
+          <p>欧盟 AI Act 第 50 条透明度义务自 2026-08-02 起适用，代码实践要求生成内容标识和深度伪造披露；中国网信部门 2026-09-03 通报专项治理，清理违法违规内容 561 万余条、处置账号 4.9 万余个，点名要求豆包、元宝、通义、文心等服务强化内容审核与标识合规。<a href="https://digital-strategy.ec.europa.eu/en/policies/code-practice-ai-generated-content" target="_blank" rel="noopener">欧盟</a> / <a href="https://english.scio.gov.cn/pressroom/2026-09/03/content_118678427.html" target="_blank" rel="noopener">国新办/新华社</a></p>
+        </article>
+      </div>
+    </section>
 
-    <section><h2>AI 资讯分类</h2><div class="two">
-      <article class="card"><span class="tag blue">模型进展</span><div class="item"><h3>推理模型进入蒸馏和部署效率竞争</h3><p>The Sequence 最新主题显示，市场关注点不只是更强模型，而是如何把 reasoning 能力压缩到更低成本、更低延迟、更易部署的形态。这会影响开源模型、企业私有化部署和边缘推理方案。</p></div><div class="item"><h3>前沿模型发布必须绑定系统卡和测试说明</h3><p>OpenAI 与 Anthropic 的公开安全材料强化了“发布模型即发布评估”的行业习惯，企业客户会把系统卡、红队、限制策略和监控能力纳入采购审查。</p></div></article>
-      <article class="card"><span class="tag rose">政策舆情</span><div class="item"><h3>能力阈值和部署测试成为监管语言</h3><p>Anthropic ASL-3 deployment and testing 与 OpenAI system card 都把风险控制写成可审查材料。政策讨论会越来越围绕“高能力模型如何上线、何时限制、谁负责事故响应”。</p></div><div class="item"><h3>开源扩散效率与责任边界继续拉扯</h3><p>a16z AI 继续覆盖开源 AI、机器人和应用生态，创业资本侧强调扩散效率；监管侧则会继续要求数据合规、用途限制、滥用追踪和责任归属。<a href="https://a16z.com/category/ai/" target="_blank" rel="noopener">来源</a></p></div></article>
-      <article class="card"><span class="tag amber">上下游产业</span><div class="item"><h3>上游约束从 GPU 扩展到系统工程</h3><p>AI factory 需要芯片、互连、内存、电力、散热、调度、客户负载和融资结构共同成立。单点硬件供给改善不一定立即转化为更低推理成本。</p></div><div class="item"><h3>Agent 中间件和文档数据层成为企业落地控制面</h3><p>LangChain 与 LlamaIndex 的近期更新都指向同一件事：企业不会只买聊天界面，而会买可观测、可评估、可接入权限系统和可追责的执行层。</p></div></article>
-      <article class="card"><span class="tag green">下游应用市场</span><div class="item"><h3>办公、电商、代码、客服、金融法律文档最容易形成 ROI</h3><p>这些场景高频、可记录、可回滚、可度量，适合从 copilot 进入 supervised agent。LangChain 今日 commerce agents 主题强化了交易型工作流的机会。</p></div><div class="item"><h3>内容生产和自动化任务的治理成本上升</h3><p>视频、数字人、搜索摘要、客服和办公 Agent 扩张会提高版权、事实性、隐私、权限、日志和人工确认成本；合规型工具链价值随之上升。</p></div></article>
-    </div></section>
+    <section>
+      <h2>AI 资讯分类</h2>
+      <div class="cols">
+        <article class="card">
+          <span class="tag">模型进展</span>
+          <ul>
+            <li><b>长程 Agent 成为共同主线：</b>Gemini 3.8 Flash、Claude Fable 5.1、Meta Muse Spark 1.3、Qwen3.8-Max-0902、Hy4 preview、GLM-5.3-Flash 都在强调编码、工具调用、持续执行、长上下文和多模态任务。</li>
+            <li><b>安全能力分层发布：</b>Google 的 Gemini 3.8 Flash Cyber、Anthropic Mythos 5.1、OpenAI Astra 的 cyber 能力都采用“可信用户/受限功能/额外安全评估”的分层路径。</li>
+            <li><b>推理成本仍是产品化关键：</b>Anthropic 降低缓存读取成本，Google 提醒高 effort 可能带来更多 token 使用，阿里/智谱/腾讯在中国市场继续用开源和低价 API 压低试用门槛。</li>
+          </ul>
+        </article>
+        <article class="card">
+          <span class="tag violet">政策舆情</span>
+          <ul>
+            <li><b>美国：</b>Axios 和 WSJ 报道显示美国政府围绕前沿模型发布前审查、G20 创新政策和版权诉讼立场形成更明确的产业政策倾向；但具体强制监管框架仍未落地。</li>
+            <li><b>欧洲：</b>AI 生成内容透明度代码和 AI Act 义务进入执行期，企业在欧盟面向用户分发 AI 内容时需要标识、检测、披露和下游文档链条。</li>
+            <li><b>中国：</b>专项治理覆盖平台内容、AI 应用、未成年人保护、仿冒真人和生成内容标识，对下游 AI 应用市场的审核成本形成持续压力。</li>
+          </ul>
+        </article>
+        <article class="card">
+          <span class="tag amber">上下游产业</span>
+          <ul>
+            <li><b>算力：</b>NVIDIA 数据中心收入继续高速增长，Broadcom/Dell/Equinix 等把 AI 增长从 GPU 芯片扩展到 ASIC、服务器、网络、存储、推理交换和边缘机房。</li>
+            <li><b>资本：</b>a16z Machine Age Fund 的 11 亿美元硬件基金显示 VC 正把 AI 投资重心从软件应用外扩到芯片、内存、网络、机器人、电力和冷却。</li>
+            <li><b>开源生态：</b>Latent Space、GitHub Trending/PullRepo 显示 Agent skills、AI 工程工作台、RAG、浏览器/桌面控制和代码代理仍是开发者高热方向。</li>
+          </ul>
+        </article>
+        <article class="card">
+          <span class="tag green">下游应用市场</span>
+          <ul>
+            <li><b>企业软件：</b>Snowflake 财报相关报道显示 AI 原生数据产品开始进入收入叙事，数据平台不再只卖存储和查询，而是在卖 Agent 可调用的数据底座。</li>
+            <li><b>网络安全：</b>CrowdStrike 与 NVIDIA 的 SafeMind、OpenAI Astra、Google Gemini Cyber、Anthropic Mythos 共同说明安全领域已经从“用 LLM 写报告”走向攻防闭环模型。</li>
+            <li><b>出行与机器人：</b>Guardian 报道伦敦通过 Uber 与 Wayve 上线带安全员的自动驾驶出租车试运营；同时 Uber 在欧洲面对算法定价与劳动权益诉讼，AI 应用商业化正与监管冲突同步出现。</li>
+          </ul>
+        </article>
+      </div>
+    </section>
 
-    <section><h2>公司动向</h2><div class="two">
-      <article class="card"><span class="tag blue">国外公司</span><div class="company"><div><strong>OpenAI</strong><small>GPT-5.2 · 系统卡</small></div><p>官网 2026-09-02 可见 GPT-5.2 system card，重点信号是模型能力发布继续与安全评估、限制策略和透明披露绑定。</p></div><div class="company"><div><strong>Anthropic</strong><small>Claude · ASL-3</small></div><p>2026-09-01 发布 ASL-3 deployment and testing，说明其继续把能力阈值、部署评估和风险缓解作为 Claude 商业化的核心信任资产。</p></div><div class="company"><div><strong>Google DeepMind / Google Cloud</strong><small>Gemini · 云分发</small></div><p>今日未确认重大单日官方模型发布；继续关注 Gemini 在 Workspace、Cloud、Android 和开发者工具中的分发。</p></div><div class="company"><div><strong>NVIDIA</strong><small>AI factory · 数据中心</small></div><p>官方叙事继续围绕 AI factory、推理、数据中心系统和企业基础设施。后续关键是供给、利用率、客户集中度和电力约束。</p></div><div class="company"><div><strong>Microsoft / AWS / Meta / xAI / Mistral / Cohere / Perplexity / Databricks / Snowflake / Hugging Face</strong><small>模型与云生态</small></div><p>今日未逐一确认重大单日公告；共同主线是模型托管、推理成本、企业数据闭环、开源分发和 Agent 安全。</p></div><div class="company"><div><strong>LangChain / LlamaIndex</strong><small>Agent 与数据层</small></div><p>LangChain 今日聚焦 commerce agents；LlamaIndex 近期聚焦 ExtractBench、LlamaParse 和文档工作流。二者都在从开发框架走向生产控制面。</p></div></article>
-      <article class="card"><span class="tag green">中国境内公司</span><div class="company"><div><strong>阿里云 / 通义</strong><small>Qwen · Model Studio</small></div><p>继续以 Qwen 系列、云 API、模型市场和企业客户分发为核心；今日未确认重大单日官方发布。<a href="https://www.alibabacloud.com/help/en/model-studio/newly-released-models" target="_blank" rel="noopener">来源</a></p></div><div class="company"><div><strong>字节跳动 / 豆包</strong><small>办公 Agent · 内容生态</small></div><p>豆包仍是国内消费级和办公场景的重要变量，关注其与协同办公、广告、电商、内容生产工作流的结合深度。</p></div><div class="company"><div><strong>百度 / 文心</strong><small>搜索 · 政企</small></div><p>关注 AI 搜索、智能体平台、政企渠道和飞桨生态。今日未确认重大单日公告。</p></div><div class="company"><div><strong>腾讯 / 混元</strong><small>微信生态 · 企业协作</small></div><p>关注混元在微信、企业微信、会议、文档、广告和游戏开发中的嵌入，以及 Agent 权限确认机制。</p></div><div class="company"><div><strong>华为 / 寒武纪</strong><small>国产算力</small></div><p>国产算力受益于 AI factory、本地化部署和供应链安全诉求，但短期仍要验证软件生态、供给节奏和客户负载。</p></div><div class="company"><div><strong>智谱 / 月之暗面 / MiniMax / 零一万物 / 阶跃星辰 / 商汤</strong><small>模型创业公司</small></div><p>观察重点是模型成本、企业合同质量、多模态产品、备案合规、应用留存和融资环境。</p></div></article>
-    </div></section>
+    <section>
+      <h2>公司动向</h2>
+      <h3>国外公司</h3>
+      <div class="company-list">
+        <article class="card"><b>OpenAI</b><p>Astra 被公开置于 cyber critical 能力讨论中心；事实是 OpenAI 已披露内部评估不能排除 critical cyber capabilities，媒体进一步报道称发布将受限并接受自愿政府审查。关注 Daybreak Blue/政府审查是否成为后续模型发布模板。<a href="https://openai.com/index/responding-next-frontier-critical-cyber-capabilities/" target="_blank" rel="noopener">来源</a></p></article>
+        <article class="card"><b>Anthropic</b><p>Fable 5.1 面向广泛用户和企业云渠道，Mythos 5.1 保持 vetted access；其差异化策略是同一能力底座叠加不同安全阈值与商业访问范围。<a href="https://www.anthropic.com/claude/fable" target="_blank" rel="noopener">来源</a></p></article>
+        <article class="card"><b>Google DeepMind / Google Cloud</b><p>Gemini 3.8 Flash 和 Cyber 版强化长程编码、Agent、网络防御；开发者文档显示工具调用、代码执行、文件搜索和计算机使用预览已成为标准能力组合。<a href="https://blog.google/innovation-and-ai/models-and-research/gemini-models/3-8-flash-and-3-8-flash-cyber/" target="_blank" rel="noopener">来源</a></p></article>
+        <article class="card"><b>Meta AI</b><p>Muse Spark 1.3 发布，官方强调更少工具调用/更少 token、长线程多任务协作和 prompt injection 防护；Meta 内部 Hatch agent 与员工 AI 使用政策争议仍需观察。<a href="https://research.meta.ai/blog/introducing-muse-spark-1-3" target="_blank" rel="noopener">来源</a></p></article>
+        <article class="card"><b>Microsoft / AWS</b><p>Anthropic 声明 Fable 5.1 可通过 AWS、Google Cloud、Microsoft Foundry 等渠道使用；AWS 的 PCS 已支持 P6e-GB200/GB300 UltraServers，继续争夺大规模 GPU 工作负载。<a href="https://aws.amazon.com/about-aws/whats-new/2026/06/aws-parallel-computing-service/" target="_blank" rel="noopener">来源</a></p></article>
+        <article class="card"><b>NVIDIA / Equinix / Together AI</b><p>Equinix Inference Exchange 将 NVIDIA 企业参考架构、Together AI 推理平台和 Equinix 全球数据中心结合，预计 2027 Q1 上线，指向“推理位置即成本与合规变量”。<a href="https://equinix.mediaroom.com/2026-09-02-Equinix-Accelerates-AI-Inference-for-Enterprises-with-NVIDIA-and-Together-AI" target="_blank" rel="noopener">来源</a></p></article>
+        <article class="card"><b>a16z</b><p>Machine Age Fund 融资 11 亿美元投向 AI 硬件、内存、网络、存储、数据中心、机器人和电力相关基础设施；这是 VC 对 AI 供应链瓶颈的明确押注。<a href="https://a16z.com/the-machine-age-fund/" target="_blank" rel="noopener">来源</a></p></article>
+        <article class="card"><b>Perplexity / Cohere / Mistral / Hugging Face / Stability AI</b><p>今日未检索到同等级官方重大更新。它们仍处于企业搜索、企业私有模型、欧洲主权 AI、开源分发和生成式媒体应用的竞争带中，后续重点看融资、云分发和监管适配。</p></article>
+        <article class="card"><b>Snowflake / Databricks</b><p>Snowflake 财报报道显示市场继续把 AI 应用部署和数据平台绑定定价；Databricks 今日未检索到同等级重大公开更新。判断：企业 AI 应用价值会继续向“可治理数据 + Agent 执行层”集中。<a href="https://www.marketwatch.com/story/snowflakes-stock-soars-as-the-company-blows-away-estimates-with-its-ai-fueled-forecast-5b5cf36c" target="_blank" rel="noopener">来源</a></p></article>
+        <article class="card"><b>Apple / xAI</b><p>今日未检索到官方重大 AI 更新。苹果关注端侧 AI 和硬件入口，xAI 关注 Grok 与模型商业化节奏；两者今日均不是主新闻源。</p></article>
+      </div>
 
-    <section><h2>行业影响分析</h2><div class="impact">
-      <article class="card"><span class="tag rose">政治</span><h3>高能力模型上线将更依赖安全评估和用途边界</h3><ul class="impact-list"><li><strong>影响结论：</strong>公共部门和受监管行业采购 AI 时，会更重视系统卡、部署测试、能力阈值、误用监测、事件披露和供应商问责。</li><li><strong>置信度：</strong>中，约 74%。官方安全材料证据较强，但各国采购条款和执法强度仍有差异。</li><li><strong>核心原因：</strong>1. OpenAI 2026-09-02 发布 GPT-5.2 system card，说明前沿模型发布需要配套公开评估材料；这会推导到采购方要求模型风险说明和审计依据。<a href="https://openai.com/index/" target="_blank" rel="noopener">来源</a> 2. Anthropic 2026-09-01 发布 ASL-3 deployment and testing，显示高能力模型上线要经过分级测试和缓解措施；这会推导到政府和企业把能力阈值写入使用边界。<a href="https://www.anthropic.com/news" target="_blank" rel="noopener">来源</a> 3. Agent 任务越自动化，越需要权限、日志、人工确认和责任边界，否则公共部门难以接受大规模部署。</li></ul><div class="logic"><strong>逻辑链检查：</strong>OpenAI system card + Anthropic ASL-3 测试 + Agent 自动化讨论升温 -> 采购方把误用监测、能力阈值、人工确认和事件披露纳入条件 -> 模型公司、云平台、政务客户、安全审计供应商受影响 -> 未来 1-3 个季度公共部门 AI 合同更可能加入审计、用途限制和披露条款。<br><strong>链条状态：</strong>已补全</div></article>
-      <article class="card"><span class="tag slate">产业</span><h3>竞争重心从模型 API 扩展到全栈基础设施与工作流控制面</h3><ul class="impact-list"><li><strong>影响结论：</strong>优势会向掌握算力系统供给、企业数据层、Agent 可观测和流程集成能力的公司集中。</li><li><strong>置信度：</strong>高，约 85%。NVIDIA、LangChain、LlamaIndex、The Sequence、GitHub Trending 的公开信号方向一致。</li><li><strong>核心原因：</strong>1. NVIDIA 官方博客持续强化 AI factory 和数据中心系统，说明上游竞争已经从单芯片扩展到整套计算基础设施。<a href="https://blogs.nvidia.com/" target="_blank" rel="noopener">来源</a> 2. LangChain 2026-09-03 聚焦 commerce agents，叠加其可观测和评估工具线，说明企业落地依赖可测、可控、可追踪的执行层。<a href="https://www.langchain.com/blog" target="_blank" rel="noopener">来源</a> 3. LlamaIndex Blog 围绕 ExtractBench、LlamaParse 和文档工作流，说明企业数据层正在用准确率、出处和成本指标重新定义 RAG 采购。<a href="https://www.llamaindex.ai/blog" target="_blank" rel="noopener">来源</a></li></ul><div class="logic"><strong>逻辑链检查：</strong>AI factory 系统化供给 + Commerce Agents + 文档抽取/评估 + 开发者工具热度 -> AI 应用需要同时降低推理成本、提升执行可靠性、接入企业数据和权限系统 -> 芯片、云、模型平台、Agent 中间件、RAG/文档智能、企业软件受影响 -> 未来 2-4 个季度预算更可能流向全栈协同和关键控制面供应商。<br><strong>链条状态：</strong>完整</div></article>
-      <article class="card"><span class="tag amber">经济</span><h3>AI 支出仍扩张，但审批标准会转向可度量 ROI</h3><ul class="impact-list"><li><strong>影响结论：</strong>企业不会停止 AI 投入，但会把预算从演示型试点转向能证明节省工时、降低错误率、提高吞吐量或降低合规风险的流程。</li><li><strong>置信度：</strong>中，约 69%。工具链和基础设施证据明确，但真实续费率、利润率和就业替代效果需要后续财报验证。</li><li><strong>核心原因：</strong>1. NVIDIA AI factory 叙事把算力当作长期资本资产；这会让客户更关注 GPU 利用率、电力成本和资本回收周期。<a href="https://blogs.nvidia.com/" target="_blank" rel="noopener">来源</a> 2. The Sequence 关注 reasoning model distillation，说明市场正在寻找更低成本的推理部署方式；成本下降会让更多流程通过 ROI 审批。<a href="https://thesequence.substack.com/archive" target="_blank" rel="noopener">来源</a> 3. LangChain 与 LlamaIndex 强化评估、可观测和文档基准，给 CFO 和业务负责人提供验收指标，使预算更容易进入可审计流程。</li></ul><div class="logic"><strong>逻辑链检查：</strong>AI factory 资本化 + 推理模型蒸馏 + Agent/文档评估工具成熟 -> 企业以利用率、单位推理成本、错误率、人工节省、吞吐量和风险降低衡量回报 -> 云厂商、企业软件、外包服务、金融法律文档、客服和代码工具受影响 -> 未来 1-3 个季度可量化流程更容易扩容，纯概念项目更容易被压缩；真实净利润改善仍待验证。<br><strong>链条状态：</strong>已补全</div></article>
-      <article class="card"><span class="tag green">金融</span><h3>AI 估值将围绕现金回收、供给瓶颈和政策风险继续分化</h3><ul class="impact-list"><li><strong>影响结论：</strong>资本市场会继续奖励算力、云、数据中心、电力、企业数据层和可审计 Agent，但会压低缺少现金流证据或政策风险上升的 AI 标的估值。</li><li><strong>置信度：</strong>中，约 63%。产业链证据和 VC 主题明确，但缺少完整实时交易、订单、毛利率和审计数据，不适合给高置信个股判断。</li><li><strong>核心原因：</strong>1. NVIDIA AI factory 叙事把算力资产、客户负载和资本回收绑定；这会推导到投资人重估订单质量、折旧和电力成本。<a href="https://blogs.nvidia.com/" target="_blank" rel="noopener">来源</a> 2. a16z AI 持续覆盖开源 AI、机器人和应用生态，说明风险资本仍愿意寻找 AI 基础设施与应用机会；但主题热度不等于现金流质量。<a href="https://a16z.com/category/ai/" target="_blank" rel="noopener">来源</a> 3. 安全治理、误用披露和公共部门采购边界会影响合同稳定性；政策事件会成为估值折价或风险溢价来源。</li></ul><div class="logic"><strong>逻辑链检查：</strong>AI factory 资产化 + VC 对 AI 基础设施/应用持续关注 + 安全政策常态化 -> 投资人按供给稀缺性、客户质量、毛利率、现金流、续约率和政策风险重新分层 -> 芯片、内存、光互连、云、数据中心、电力、模型平台、Agent 软件和 AI 安全公司受影响 -> 未来 1-4 个季度财报、融资和二级市场中，CapEx 指引、毛利率、现金流和政策事件将驱动估值分化；缺口是缺少完整实时市场和公司级订单数据。<br><strong>链条状态：</strong>证据不足</div></article>
-    </div></section>
+      <h3 style="margin-top:22px;">中国境内公司</h3>
+      <div class="company-list">
+        <article class="card"><b>阿里云 / 通义</b><p>百炼模型上架页显示 2026-09-02 上线 qwen3.8-max-0902，覆盖多区域，强调编码、协作智能体、视觉理解、1M 上下文；WAIC 2026 还披露 AgentLoop、AgentTeams、TokenWorks 等 Agent-native cloud 组件。<a href="https://help.aliyun.com/zh/model-studio/newly-released-models" target="_blank" rel="noopener">来源</a></p></article>
+        <article class="card"><b>腾讯 / 混元</b><p>腾讯 8 月 28 日发布并开源 Hy4 preview；腾讯云同时推动混元旧版多模态接口迁移至 TokenHub，产品停止新购时间为 2026-09-01，全量终止服务时间为 2026-09-30。<a href="https://www.tencent.com/zh-cn/tencent-releases-and-open-sources-tencent-hy4-preview/" target="_blank" rel="noopener">来源</a></p></article>
+        <article class="card"><b>智谱 / Z.ai</b><p>GLM-5.3-Flash 模型卡显示 MIT 开源、320B 总参数/18B 激活、原生多模态；第三方和社区报道称其前身为 OpenRouter/OpenCode 匿名测试模型 Ox Alpha。官方模型卡是事实主源，跑分与匿名榜单仍需独立复现。<a href="https://huggingface.co/zai-org/GLM-5.3-Flash" target="_blank" rel="noopener">来源</a></p></article>
+        <article class="card"><b>字节跳动 / 豆包</b><p>今日重点来自监管端：国新办/新华社通报称豆包、元宝、通义、文心等聊天和内容生成服务加强训练与输出内容审核、AI 标识合规。未检索到豆包同等级模型官方重大更新。<a href="https://english.scio.gov.cn/pressroom/2026-09/03/content_118678427.html" target="_blank" rel="noopener">来源</a></p></article>
+        <article class="card"><b>百度 / 文心</b><p>今日未检索到文心官方重大模型发布；监管通报把文心列入需加强内容审核和生成内容标识合规的主要服务。短期看合规产品化和企业落地，而非单日模型突破。<a href="https://english.scio.gov.cn/pressroom/2026-09/03/content_118678427.html" target="_blank" rel="noopener">来源</a></p></article>
+        <article class="card"><b>华为</b><p>今日监管通报提到华为、小米、OPPO、vivo 等应用商店提高 AI 应用开发者审核标准并复查已上架应用；这使手机入口成为 AI 合规分发的一环。<a href="https://english.scio.gov.cn/pressroom/2026-09/03/content_118678427.html" target="_blank" rel="noopener">来源</a></p></article>
+        <article class="card"><b>月之暗面 / MiniMax / 零一万物 / 阶跃星辰 / 商汤</b><p>今日未检索到同等级官方重大更新。它们的关注点仍是多模态、长上下文、应用分发和成本曲线；在国内监管执行加强后，内容标识与审核能力会成为产品竞争门槛。</p></article>
+        <article class="card"><b>寒武纪 / 国产算力链</b><p>今日未检索到寒武纪官方重大更新；但智谱、腾讯、阿里新模型继续强调高性价比和长上下文，推演上会增加国产推理芯片、显存、互联和模型压缩需求。该判断为产业推演，需后续用订单和产能数据验证。</p></article>
+      </div>
+    </section>
 
-    <section><h2>后续关注清单</h2><ul class="watch">
-      <li><strong>固定源：</strong>继续跟踪 Latent Space、The Sequence、The Batch 是否发布新的模型评估、AI engineer 或监管专题。</li>
-      <li><strong>Agent 安全：</strong>观察 OpenAI、Anthropic、Google、Meta 是否把权限、日志、人工确认和工具调用安全做成标准产品能力。</li>
-      <li><strong>文档数据层：</strong>跟踪 ExtractBench、LlamaParse、KYC/OCR/合同/贷款文档自动化的准确率、出处和单位成本。</li>
-      <li><strong>算力供给：</strong>关注 NVIDIA、云厂商、国产算力、内存、光互连、电力和数据中心融资的供需变化。</li>
-      <li><strong>中国公司：</strong>继续观察 Qwen、DeepSeek、豆包、文心、混元、Kimi、GLM、MiniMax、阶跃星辰与国产算力联动。</li>
-      <li><strong>资本市场：</strong>重点看 AI 相关公司 CapEx 指引、毛利率、订单质量、续费率和现金流，而不是只看发布会热度。</li>
-    </ul></section>
+    <section>
+      <h2>行业影响分析</h2>
+      <div class="impact">
+        <article class="card">
+          <span class="tag violet">政治</span>
+          <div class="field"><b>影响结论</b>前沿模型发布正在从企业自律走向“政府预审 + 国际标准协调 + 地区透明度规则”的混合治理。</div>
+          <div class="field"><b>置信度</b>中高（75%）。</div>
+          <div class="field"><b>核心原因</b>1. OpenAI 披露 Astra 触及 critical cyber 能力，并有媒体报道其采用自愿政府审查，说明模型安全已进入国家安全议程。2. 欧盟 AI Act 透明度义务自 2026-08-02 起适用，生成内容标识有明确合规路径。3. 中国 2026-09-03 专项治理直接覆盖平台、模型服务和应用商店，说明执行层面已经下沉到分发渠道。</div>
+          <div class="field"><b>逻辑链检查</b>模型自主网络能力与生成内容扩散 -> 政府担忧安全、舆论操纵和平台责任 -> 前沿模型公司、平台、应用商店、企业客户受影响 -> 未来 3-12 个月发布节奏更依赖安全评估、地区合规与可审计材料。</div>
+          <div class="field"><b>链条状态</b><span class="status">完整</span></div>
+        </article>
+        <article class="card">
+          <span class="tag amber">产业</span>
+          <div class="field"><b>影响结论</b>AI 产业竞争焦点从“单模型能力”扩展到“模型 + Agent 工具链 + 推理部署位置 + 数据治理”的全栈竞争。</div>
+          <div class="field"><b>置信度</b>高（85%）。</div>
+          <div class="field"><b>核心原因</b>1. Google、Anthropic、Meta、阿里、腾讯、智谱均在近期发布中强调长程编码、工具调用、1M 上下文或多模态 Agent。2. Equinix Inference Exchange 把推理部署位置、开放模型和企业互联打包成新产品。3. GitHub/PullRepo/Latent Space 的开发者热度集中在 Agent skills、RAG、代码代理和工作台。</div>
+          <div class="field"><b>逻辑链检查</b>模型可持续执行更复杂任务 -> 企业需要工具编排、观测、权限、数据靠近和成本控制 -> 云厂商、数据中心、开发框架、数据平台受影响 -> 2026 下半年采购评价从 benchmark 转向端到端交付成本、合规和可维护性。</div>
+          <div class="field"><b>链条状态</b><span class="status">完整</span></div>
+        </article>
+        <article class="card">
+          <span class="tag green">经济</span>
+          <div class="field"><b>影响结论</b>AI 对实体经济的拉动正更多体现为数据中心、服务器、网络、内存、电力、冷却和专业服务支出，而非只体现为软件订阅收入。</div>
+          <div class="field"><b>置信度</b>中高（78%）。</div>
+          <div class="field"><b>核心原因</b>1. NVIDIA FY2027 Q2 数据中心收入 890 亿美元，同比增长 117%，显示算力需求仍强。2. a16z 11 亿美元 Machine Age Fund 明确投向硬件与 AI 物理基础设施。3. Equinix、AWS、Dell/Broadcom 相关报道显示推理、服务器和专用芯片需求继续外溢到传统 IT 基础设施链条。</div>
+          <div class="field"><b>逻辑链检查</b>Agent 和多模态推理消耗更多 token 与低延迟资源 -> 企业和模型公司扩大服务器、ASIC/GPU、网络和机房投入 -> 数据中心建设、半导体、能源与工程服务受影响 -> 未来 6-18 个月 CapEx 与供电/存储/内存约束会继续左右 AI 扩张速度。</div>
+          <div class="field"><b>链条状态</b><span class="status">已补全</span> 已补充从模型 token 强度到实体投资的传导环节；仍需用企业订单兑现率跟踪。</div>
+        </article>
+        <article class="card">
+          <span class="tag red">金融</span>
+          <div class="field"><b>影响结论</b>AI 资产定价会继续分化：算力和数据平台短期受业绩支撑，但高估值需要被持续订单、毛利率和客户留存验证。</div>
+          <div class="field"><b>置信度</b>中（68%）。</div>
+          <div class="field"><b>核心原因</b>1. NVIDIA 财报、Dell/Broadcom/Snowflake 相关报道支持“AI 需求仍在兑现”的市场叙事。2. FT/WSJ 对 neocloud 和循环融资风险的讨论显示资本市场开始质疑基础设施融资质量。3. 模型价格下降和缓存价格下降利好应用扩散，但可能压缩纯 API 转售和低差异化应用利润。</div>
+          <div class="field"><b>逻辑链检查</b>AI 订单与营收高速增长 -> 投资者上调算力、服务器、数据平台收入预期 -> 芯片、服务器、云、数据软件、AI 应用股票受影响 -> 未来 1-2 个财季分化取决于 backlog 转收入、毛利率、资本开支回报和监管风险披露。</div>
+          <div class="field"><b>链条状态</b><span class="status warn">待验证</span> 缺口是 Dell/Broadcom/Snowflake 等公司的后续订单取消率、AI 毛利率和真实客户 ROI，需要下一季财报验证。</div>
+        </article>
+      </div>
+    </section>
+
+    <section>
+      <h2>后续关注清单</h2>
+      <ul>
+        <li><b>OpenAI Astra：</b>确认正式发布日期、哪些 cyber 功能被限制、是否披露第三方评估结果，以及政府自愿审查是否进入常态化。</li>
+        <li><b>Gemini 3.8 Flash：</b>跟踪实际开发者成本，尤其高 effort 模式是否因输出 token 增多导致单任务成本显著上升。</li>
+        <li><b>Anthropic Mythos / Fable：</b>观察 vetted access 的客户范围、生命科学与网络安全能力如何做访问控制，以及 Enterprise Frontier Safeguards 的云端数据控制细节。</li>
+        <li><b>中国模型竞争：</b>跟踪 qwen3.8-max-0902、Hy4 preview、GLM-5.3-Flash 的独立 benchmark、真实编码任务表现、国产芯片推理成本和海外 API 分发。</li>
+        <li><b>监管：</b>欧盟生成内容标识执行案例、中国 AI 专项治理后续处罚样本、美国是否把高级模型预审写入正式政策。</li>
+        <li><b>基础设施：</b>Equinix Inference Exchange 2027 Q1 上线范围、AWS/NVIDIA UltraServer 可用性、内存和电力瓶颈是否拖慢企业 AI 项目。</li>
+        <li><b>资本市场：</b>AI 服务器 backlog 转收入、AI 数据平台产品毛利、neocloud 融资结构和大客户集中度。</li>
+      </ul>
+    </section>
   </main>
-  <footer><div class="wrap"><h2>今日已检查的固定信息源</h2><div class="source-list">
-    <div class="source"><strong><a href="https://www.latent.space/" target="_blank" rel="noopener">Latent Space</a></strong><br>已检查；公开页面近期仍以 AI engineer、frontier model、agent 与推理成本为主，未稳定显示 2026-09-03 重大单日更新。</div>
-    <div class="source"><strong><a href="https://thesequence.substack.com/archive" target="_blank" rel="noopener">The Sequence</a></strong><br>已检查；公开归档显示约 22 小时内有 reasoning models distillation 深度文章，已纳入模型与经济判断。</div>
-    <div class="source"><strong><a href="https://www.deeplearning.ai/the-batch" target="_blank" rel="noopener">The Batch · DeepLearning.AI</a></strong><br>已检查；公开页面返回 403/抓取受限，未稳定显示今日重大更新，记录为“已检查，公开页面未显示重大更新/抓取受限”。</div>
-    <div class="source"><strong><a href="https://a16z.com/category/ai/" target="_blank" rel="noopener">a16z AI</a></strong><br>已检查；公开页持续覆盖开源 AI、机器人、应用生态和 AI 基础设施，已纳入金融与产业判断。</div>
-    <div class="source"><strong><a href="https://www.langchain.com/blog" target="_blank" rel="noopener">LangChain Blog</a></strong><br>已检查；2026-09-03 可见 commerce agents 文章，已纳入 Agent 生产化和下游应用判断。</div>
-    <div class="source"><strong><a href="https://www.llamaindex.ai/blog" target="_blank" rel="noopener">LlamaIndex Blog</a></strong><br>已检查；近期内容聚焦 ExtractBench、LlamaParse、文档抽取和工作流编排，已纳入企业文档数据层判断。</div>
-    <div class="source"><strong><a href="https://github.com/trending" target="_blank" rel="noopener">GitHub Trending</a></strong><br>已检查；公开页面显示 Agent、AI coding、本地部署和自动化工具仍是开发者关注方向。</div>
-  </div><p class="note">说明：本页只生成本地文件，未执行 GitHub Pages 上传，也未发送飞书消息。时间敏感信息按 2026-09-03 09:35 CST 前后公开可见页面整理；抓取受限或未稳定返回内容均按待验证信号处理。</p></div></footer>
+
+  <footer>
+    <div class="wrap">
+      <b>今日固定信息源检查状态</b>
+      <table class="source-table">
+        <thead><tr><th>信息源</th><th>检查结果</th><th>状态</th></tr></thead>
+        <tbody>
+          <tr><td><a href="https://www.latent.space/" target="_blank" rel="noopener">Latent Space</a></td><td>已检查。最新高相关更新包括 2026-09-03 AINews：Muse Spark 1.3，2026-09-02 AINews：Claude Fable/Mythos 5.1；纳入模型竞争与开发者生态判断。</td><td>有相关更新</td></tr>
+          <tr><td><a href="https://thesequence.substack.com/archive" target="_blank" rel="noopener">The Sequence</a></td><td>已检查。最新 Issue 924（约 2026-09-02）讨论蒸馏模型；Issue 923（2026-08-30）强调 AI 工业化与基础设施转向。无 2026-09-03 当日重大突发。</td><td>已检查，无当日重大更新</td></tr>
+          <tr><td><a href="https://dev.deeplearning.ai/the-batch/" target="_blank" rel="noopener">The Batch（DeepLearning.AI）</a></td><td>已检查。公开索引显示近期页更新滞后，未检索到 2026-09-03 当日重大公开更新；仅作为背景跟踪。</td><td>已检查，无重大更新</td></tr>
+          <tr><td><a href="https://a16z.com/category/ai/" target="_blank" rel="noopener">a16z AI</a></td><td>已检查。2026-08-28 Machine Age Fund 为本期基础设施与资本流向主源；AI 分类页未见 2026-09-03 当日同等级更新。</td><td>有近期重大更新</td></tr>
+          <tr><td><a href="https://blog.langchain.com/" target="_blank" rel="noopener">LangChain Blog</a></td><td>已检查。检索到的最新高相关内容集中在 Agent 基础设施、Context Engineering、OpenTelemetry/LangSmith 等主题；未检索到 2026-09-03 当日重大公告。</td><td>已检查，无重大更新</td></tr>
+          <tr><td><a href="https://www.llamaindex.ai/blog" target="_blank" rel="noopener">LlamaIndex Blog</a></td><td>已检查。近期高相关内容为 Agentic Document Processing、Workflows/Observability；未检索到 2026-09-03 当日重大公告。</td><td>已检查，无重大更新</td></tr>
+          <tr><td><a href="https://github.com/trending" target="_blank" rel="noopener">GitHub Trending</a></td><td>已检查。GitHub Trending 页面可访问，补充使用 PullRepo 2026-09-03 AI 项目雷达与相关 GitHub 趋势快照；趋势集中在 AI Agent、RAG、代码助手、Prompt Engineering 和本地/多模型工具。</td><td>有趋势信号</td></tr>
+        </tbody>
+      </table>
+      <p style="margin-top:14px;">页面自检：已确认政治、产业、经济、金融四个影响模块均包含影响结论、置信度、核心原因、逻辑链检查和链条状态；链条状态仅使用“完整 / 已补全 / 证据不足 / 待验证”。</p>
+    </div>
+  </footer>
 </body>
 </html>
